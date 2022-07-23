@@ -30,8 +30,14 @@ set colorcolumn=100
 " Column color set to grey
 highlight ColorColumn ctermbg=1
 
+""activate indent colors by default
+let g:indent_guides_enable_on_vim_startup = 1
+
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
+
+""indent colors
+Plug 'nathanaelkane/vim-indent-guides'
 
 "html snippets
 Plug 'honza/vim-snippets'
